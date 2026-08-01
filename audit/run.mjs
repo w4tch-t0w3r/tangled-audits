@@ -159,6 +159,10 @@ try {
     sampleTargets: v.nodes
       .slice(0, 50)
       .map((n) => (Array.isArray(n.target) ? n.target.join(" ") : String(n.target)).slice(0, 140)),
+    samples: v.nodes.slice(0, 50).map((n) => ({
+      target: (Array.isArray(n.target) ? n.target.join(" ") : String(n.target)).slice(0, 140),
+      note: (n.failureSummary ?? "").replace(/^Fix any of the following:\s*/i, "").slice(0, 300),
+    })),
   }));
 
   writeReport({

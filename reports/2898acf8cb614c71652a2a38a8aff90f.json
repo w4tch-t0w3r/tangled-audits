@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "2898acf8cb614c71652a2a38a8aff90f",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro",
+  "finalUrl": "https://tangled-design.ro/ro",
+  "pageTitle": "Tangled Design — Agenție independentă de creație și dezvoltare",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-01T16:00:09.213Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 25,
+    "incomplete": 2,
+    "inapplicable": 38
+  },
+  "violations": []
+}

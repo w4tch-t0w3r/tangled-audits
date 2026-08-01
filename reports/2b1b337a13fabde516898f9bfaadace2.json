@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "2b1b337a13fabde516898f9bfaadace2",
+  "status": "done",
+  "requestedUrl": "https://prokevintex.ro",
+  "finalUrl": "https://prokevintex.ro/",
+  "pageTitle": "PROKEVIN TEX – Îmbrăcăminte de lucru & echipamente de protecție",
+  "htmlLang": "ro-RO",
+  "fetchedAt": "2026-08-01T15:42:48.084Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 9,
+    "passes": 29,
+    "incomplete": 1,
+    "inapplicable": 34
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 9,
+      "sampleTargets": [
+        ".pk-featured__subtitle",
+        ".pk-cat-showcase__subtitle",
+        ".pk-cat-showcase__card:nth-child(1) > .pk-cat-showcase__body > .pk-cat-showcase__subs"
+      ]
+    }
+  ]
+}

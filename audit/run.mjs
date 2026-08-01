@@ -157,7 +157,7 @@ try {
     wcagTags: v.tags.filter((t) => /^wcag\d/.test(t)),
     nodes: v.nodes.length,
     sampleTargets: v.nodes
-      .slice(0, 3)
+      .slice(0, 50)
       .map((n) => (Array.isArray(n.target) ? n.target.join(" ") : String(n.target)).slice(0, 140)),
   }));
 

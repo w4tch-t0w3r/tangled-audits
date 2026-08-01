@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "9115493a4e5d1c5e21a8e18cef5deff9",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro",
+  "finalUrl": "https://tangled-design.ro/ro",
+  "pageTitle": "Tangled Design — Agenție independentă de creație și dezvoltare",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-01T15:35:38.315Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 23,
+    "passes": 25,
+    "incomplete": 2,
+    "inapplicable": 38
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 23,
+      "sampleTargets": [
+        ".px-4",
+        ".py-7.lg\\:py-9[href$=\"invuna\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading-\\[0\\",
+        ".flagship-rotator-label"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "id": "f78b9f0d39a7d14b7a3cc892edc8f245",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro",
+  "finalUrl": "https://tangled-design.ro/ro",
+  "pageTitle": "Tangled Design — Agenție independentă de creație și dezvoltare",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-01T15:44:43.810Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 22,
+    "passes": 25,
+    "incomplete": 2,
+    "inapplicable": 38
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 22,
+      "sampleTargets": [
+        ".px-4",
+        ".py-7.lg\\:py-9[href$=\"invuna\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading-\\[0\\",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semib",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].le",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin"
+      ]
+    }
+  ]
+}

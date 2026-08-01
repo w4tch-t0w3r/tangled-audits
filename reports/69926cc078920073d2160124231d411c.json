@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "id": "69926cc078920073d2160124231d411c",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro",
+  "finalUrl": "https://tangled-design.ro/ro",
+  "pageTitle": "Tangled Design — Agenție independentă de creație și dezvoltare",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-01T15:49:00.822Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 22,
+    "passes": 25,
+    "incomplete": 2,
+    "inapplicable": 38
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 22,
+      "sampleTargets": [
+        ".px-4",
+        ".py-7.lg\\:py-9[href$=\"invuna\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading-\\[0\\",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semib",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].le",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+        ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin"
+      ],
+      "samples": [
+        {
+          "target": ".px-4",
+          "note": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #ff6500, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"invuna\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading-\\[0\\",
+          "note": "Element has insufficient color contrast of 2.82 (foreground color: #ff6500, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semib",
+          "note": "Element has insufficient color contrast of 1.4 (foreground color: #ecd0bb, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"medical-one\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leading",
+          "note": "Element has insufficient color contrast of 1.68 (foreground color: #c3c3c3, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+          "note": "Element has insufficient color contrast of 1.4 (foreground color: #ecd0bb, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"click-credit\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+          "note": "Element has insufficient color contrast of 1.68 (foreground color: #c3c3c3, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-",
+          "note": "Element has insufficient color contrast of 1.4 (foreground color: #ecd0bb, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"daniel-tudorache\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].le",
+          "note": "Element has insufficient color contrast of 1.68 (foreground color: #c3c3c3, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+          "note": "Element has insufficient color contrast of 1.4 (foreground color: #ecd0bb, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"prokevin-tex\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+          "note": "Element has insufficient color contrast of 1.68 (foreground color: #c3c3c3, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .text-brand-orange-text.tabular-nums.font-semi",
+          "note": "Element has insufficient color contrast of 1.4 (foreground color: #ecd0bb, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > .tabular-nums:nth-child(3)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .gap-x-2\\.5.gap-y-1.flex-wrap > span:nth-child(5)",
+          "note": "Element has insufficient color contrast of 1.37 (foreground color: #d7d7d8, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".py-7.lg\\:py-9[href$=\"cabana-rares\"] > .gap-3.flex-col.flex > .items-start.flex-wrap.gap-4 > .text-\\[clamp\\(2\\.5rem\\,5vw\\,4\\.5rem\\)\\].leadin",
+          "note": "Element has insufficient color contrast of 1.68 (foreground color: #c3c3c3, background color: #fafaf9, font size: 54.0pt (72px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+name: accessibility-audit
+
+on:
+  repository_dispatch:
+    types: [audit-request]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Report id (hex)"
+        required: true
+      url:
+        description: "URL to audit"
+        required: true
+
+# Serialize runs so report commits never race each other.
+concurrency:
+  group: audit-queue
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: audit/package-lock.json
+
+      - name: Install audit engine
+        working-directory: audit
+        run: npm ci
+
+      - name: Run audit
+        working-directory: audit
+        # env indirection — payload values never touch the shell as code
+        env:
+          AUDIT_ID: ${{ github.event.client_payload.id || inputs.id }}
+          AUDIT_URL: ${{ github.event.client_payload.url || inputs.url }}
+        run: node run.mjs
+
+      - name: Commit report
+        run: |
+          git config user.name "tangled-audit-bot"
+          git config user.email "audit-bot@tangled-design.ro"
+          git add reports/
+          git diff --cached --quiet && echo "nothing to commit" && exit 0
+          git commit -m "report: $(git diff --cached --name-only | head -1)"
+          git pull --rebase origin main
+          git push origin main

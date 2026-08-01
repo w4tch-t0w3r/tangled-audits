@@ -1,0 +1,12 @@
+{
+  "name": "tangled-audit-engine",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@axe-core/puppeteer": "^4.9.1",
+    "puppeteer": "^24.9.0"
+  }
+}

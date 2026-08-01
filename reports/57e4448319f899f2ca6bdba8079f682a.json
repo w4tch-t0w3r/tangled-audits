@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "57e4448319f899f2ca6bdba8079f682a",
+  "status": "done",
+  "requestedUrl": "https://prokevintex.ro/",
+  "finalUrl": "https://prokevintex.ro/",
+  "pageTitle": "PROKEVIN TEX – Îmbrăcăminte de lucru & echipamente de protecție",
+  "htmlLang": "ro-RO",
+  "fetchedAt": "2026-08-01T18:07:58.870Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 9,
+    "passes": 29,
+    "incomplete": 1,
+    "inapplicable": 34
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 9,
+      "sampleTargets": [
+        ".pk-featured__subtitle",
+        ".pk-cat-showcase__subtitle",
+        ".pk-cat-showcase__card:nth-child(1) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+        ".pk-cat-showcase__card:nth-child(2) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+        ".pk-cat-showcase__card:nth-child(3) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+        ".pk-cat-showcase__card:nth-child(6) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+        ".pk-footer-bottom__legal > a:nth-child(1)",
+        ".pk-footer-bottom__legal > a:nth-child(3)",
+        ".pk-footer-bottom__legal > a:nth-child(5)"
+      ],
+      "samples": [
+        {
+          "target": ".pk-featured__subtitle",
+          "note": "Element has insufficient color contrast of 3.99 (foreground color: #7a7b78, background color: #f7f8f6, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-cat-showcase__subtitle",
+          "note": "Element has insufficient color contrast of 4.25 (foreground color: #7a7b78, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-cat-showcase__card:nth-child(1) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+          "note": "Element has insufficient color contrast of 3.99 (foreground color: #7a7b78, background color: #f7f8f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-cat-showcase__card:nth-child(2) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+          "note": "Element has insufficient color contrast of 3.99 (foreground color: #7a7b78, background color: #f7f8f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-cat-showcase__card:nth-child(3) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+          "note": "Element has insufficient color contrast of 3.99 (foreground color: #7a7b78, background color: #f7f8f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-cat-showcase__card:nth-child(6) > .pk-cat-showcase__body > .pk-cat-showcase__subs",
+          "note": "Element has insufficient color contrast of 3.99 (foreground color: #7a7b78, background color: #f7f8f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-footer-bottom__legal > a:nth-child(1)",
+          "note": "Element has insufficient color contrast of 4.32 (foreground color: #7a7b78, background color: #141413, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-footer-bottom__legal > a:nth-child(3)",
+          "note": "Element has insufficient color contrast of 4.32 (foreground color: #7a7b78, background color: #141413, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".pk-footer-bottom__legal > a:nth-child(5)",
+          "note": "Element has insufficient color contrast of 4.32 (foreground color: #7a7b78, background color: #141413, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

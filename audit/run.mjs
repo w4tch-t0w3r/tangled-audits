@@ -140,6 +140,21 @@ try {
 
   await new Promise((r) => setTimeout(r, 2_000));
 
+  // Walk the page to the bottom and back so scroll-triggered reveal
+  // animations complete before the audit — otherwise below-the-fold
+  // text is captured mid-reveal (near-zero opacity) and reports as a
+  // false color-contrast violation. Real visitors always scroll.
+  await page.evaluate(async () => {
+    const step = window.innerHeight * 0.7;
+    const max = Math.min(document.body.scrollHeight, 60_000);
+    for (let y = 0; y <= max; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => setTimeout(r, 150));
+    }
+    window.scrollTo(0, 0);
+  });
+  await new Promise((r) => setTimeout(r, 1_200));
+
   const finalUrl = page.url();
   const pageTitle = (await page.title().catch(() => "")) || "";
   const htmlLang = await page

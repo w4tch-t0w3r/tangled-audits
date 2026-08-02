@@ -12,9 +12,11 @@ on:
         description: "URL to audit"
         required: true
 
-# Serialize runs so report commits never race each other.
+# One group PER REPORT — a shared queue group makes GitHub cancel
+# queued runs when requests arrive in bursts (only 1 pending is kept).
+# Parallel runs are fine; the commit step retries around push races.
 concurrency:
-  group: audit-queue
+  group: audit-${{ github.event.client_payload.id || inputs.id }}
   cancel-in-progress: false
 
 permissions:
@@ -52,5 +54,8 @@ jobs:
           git add reports/
           git diff --cached --quiet && echo "nothing to commit" && exit 0
           git commit -m "report: $(git diff --cached --name-only | head -1)"
-          git pull --rebase origin main
-          git push origin main
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push race, retry $i"; sleep $((i * 2))
+          done
+          exit 1

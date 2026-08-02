@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "0ccbaee7d72fbb97ff4f53289e7c10bc",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/studio",
+  "finalUrl": "https://tangled-design.ro/ro/studio",
+  "pageTitle": "Studio — Cine suntem și cum lucrăm — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T07:07:32.880Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 27,
+    "incomplete": 2,
+    "inapplicable": 36
+  },
+  "violations": []
+}

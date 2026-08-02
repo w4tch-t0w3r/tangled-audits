@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "28d13cdcc6155b9b3b3eff3b312f9049",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/work/medical-one",
+  "finalUrl": "https://tangled-design.ro/ro/work/medical-one",
+  "pageTitle": "Medical One — un site construit în jurul nevoilor pacienților — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T10:58:09.441Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 28,
+    "incomplete": 2,
+    "inapplicable": 35
+  },
+  "violations": []
+}

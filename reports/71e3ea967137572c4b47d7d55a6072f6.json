@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "71e3ea967137572c4b47d7d55a6072f6",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/audit",
+  "finalUrl": "https://tangled-design.ro/ro/audit",
+  "pageTitle": "Verificare gratuită de accesibilitate — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T07:14:16.869Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 29,
+    "incomplete": 2,
+    "inapplicable": 34
+  },
+  "violations": []
+}

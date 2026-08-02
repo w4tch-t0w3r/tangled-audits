@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "id": "41a3e7ed3c8da584e71221999b678806",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/audit",
+  "finalUrl": "https://tangled-design.ro/ro/audit",
+  "pageTitle": "Verificare gratuită de accesibilitate — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T07:07:32.716Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 1,
+    "passes": 29,
+    "incomplete": 2,
+    "inapplicable": 34
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 1,
+      "sampleTargets": [
+        ".text-text-tertiary"
+      ],
+      "samples": [
+        {
+          "target": ".text-text-tertiary",
+          "note": "Element has insufficient color contrast of 3.46 (foreground color: #86868b, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

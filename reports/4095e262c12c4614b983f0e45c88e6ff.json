@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "4095e262c12c4614b983f0e45c88e6ff",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/work",
+  "finalUrl": "https://tangled-design.ro/ro/work",
+  "pageTitle": "Proiecte de web design și dezvoltare — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T10:54:42.730Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 29,
+    "incomplete": 2,
+    "inapplicable": 34
+  },
+  "violations": []
+}

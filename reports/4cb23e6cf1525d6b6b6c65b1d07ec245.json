@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "4cb23e6cf1525d6b6b6c65b1d07ec245",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/blog/ce-inseamna-un-site-accesibil",
+  "finalUrl": "https://tangled-design.ro/ro/blog/ce-inseamna-un-site-accesibil",
+  "pageTitle": "Ce înseamnă, cu adevărat, un site accesibil — și cine e obligat prin lege să aibă unul — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T07:07:30.284Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 26,
+    "incomplete": 2,
+    "inapplicable": 37
+  },
+  "violations": []
+}

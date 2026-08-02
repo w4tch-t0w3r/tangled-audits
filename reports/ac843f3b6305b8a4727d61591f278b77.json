@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "id": "ac843f3b6305b8a4727d61591f278b77",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/process",
+  "finalUrl": "https://tangled-design.ro/ro/process",
+  "pageTitle": "Procesul de design și dezvoltare web — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T10:46:04.370Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 2,
+    "violationNodes": 17,
+    "passes": 25,
+    "incomplete": 1,
+    "inapplicable": 37
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 9,
+      "sampleTargets": [
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dd > span",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dd > span",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dd > span",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dd > span:nth-child(1)",
+        ".font-medium.text-text-secondary.md\\:text-body"
+      ],
+      "samples": [
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dt",
+          "note": "Element has insufficient color contrast of 1.05 (foreground color: #f4f4f4, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dd > span",
+          "note": "Element has insufficient color contrast of 1.08 (foreground color: #f1f1f0, background color: #fafaf9, font size: 48.0pt (64px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dt",
+          "note": "Element has insufficient color contrast of 1.05 (foreground color: #f4f4f4, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dd > span",
+          "note": "Element has insufficient color contrast of 1.08 (foreground color: #f1f1f0, background color: #fafaf9, font size: 48.0pt (64px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dt",
+          "note": "Element has insufficient color contrast of 1.05 (foreground color: #f4f4f4, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dd > span",
+          "note": "Element has insufficient color contrast of 1.08 (foreground color: #f1f1f0, background color: #fafaf9, font size: 48.0pt (64px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dt",
+          "note": "Element has insufficient color contrast of 1.05 (foreground color: #f4f4f4, background color: #fafaf9, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dd > span:nth-child(1)",
+          "note": "Element has insufficient color contrast of 1.08 (foreground color: #f1f1f0, background color: #fafaf9, font size: 48.0pt (64px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "target": ".font-medium.text-text-secondary.md\\:text-body",
+          "note": "Element has insufficient color contrast of 1.05 (foreground color: #f4f4f4, background color: #fafaf9, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "dlitem",
+      "impact": "serious",
+      "help": "<dt> and <dd> elements must be contained by a <dl>",
+      "description": "Ensure <dt> and <dd> elements are contained by a <dl>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/dlitem?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2a",
+        "wcag131"
+      ],
+      "nodes": 8,
+      "sampleTargets": [
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dd",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dd",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dd",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dt",
+        ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dd"
+      ],
+      "samples": [
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dt",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(1) > dd",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dt",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(2) > dd",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dt",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(3) > dd",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dt",
+          "note": "Description list item does not have a <dl> parent element"
+        },
+        {
+          "target": ".md\\:px-6.md\\:first\\:pl-0.md\\:last\\:pr-0:nth-child(4) > dd",
+          "note": "Description list item does not have a <dl> parent element"
+        }
+      ]
+    }
+  ]
+}

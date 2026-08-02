@@ -115,6 +115,14 @@ const browser = await puppeteer.launch({
 try {
   const page = await browser.newPage();
   await page.setViewport({ width: 1440, height: 900 });
+  // Audit under prefers-reduced-motion: assistive-technology users
+  // commonly run with it, well-built sites render their final state
+  // instantly, and it prevents axe from catching entrance animations
+  // mid-tween (headless Chrome throttles rAF, freezing tweens at
+  // near-zero opacity — a false contrast violation).
+  await page.emulateMediaFeatures([
+    { name: "prefers-reduced-motion", value: "reduce" },
+  ]);
   const ua = await browser.userAgent();
   await page.setUserAgent(
     `${ua} TangledAuditBot/1.0 (+https://tangled-design.ro/audit)`

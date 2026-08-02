@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "id": "0691aeb11106ae9b91aa709e2a157a39",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/work/medical-one",
+  "finalUrl": "https://tangled-design.ro/ro/work/medical-one",
+  "pageTitle": "Medical One — un site construit în jurul nevoilor pacienților — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-02T10:54:42.107Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 1,
+    "violationNodes": 8,
+    "passes": 28,
+    "incomplete": 2,
+    "inapplicable": 35
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 8,
+      "sampleTargets": [
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(1) > dt",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(1) > dd",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(2) > dt",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(2) > dd",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(3) > dt",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(3) > dd",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(4) > dt",
+        ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(4) > dd"
+      ],
+      "samples": [
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(1) > dt",
+          "note": "Element has insufficient color contrast of 1.78 (foreground color: #bdbdbe, background color: #f9f9f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(1) > dd",
+          "note": "Element has insufficient color contrast of 2.67 (foreground color: #9a9a9a, background color: #f9f9f8, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(2) > dt",
+          "note": "Element has insufficient color contrast of 1.78 (foreground color: #bdbdbe, background color: #f9f9f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(2) > dd",
+          "note": "Element has insufficient color contrast of 2.67 (foreground color: #9a9a9a, background color: #f9f9f8, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(3) > dt",
+          "note": "Element has insufficient color contrast of 1.78 (foreground color: #bdbdbe, background color: #f9f9f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(3) > dd",
+          "note": "Element has insufficient color contrast of 2.67 (foreground color: #9a9a9a, background color: #f9f9f8, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(4) > dt",
+          "note": "Element has insufficient color contrast of 1.78 (foreground color: #bdbdbe, background color: #f9f9f8, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".md\\:gap-2.md\\:px-5.md\\:first\\:pl-0:nth-child(4) > dd",
+          "note": "Element has insufficient color contrast of 2.67 (foreground color: #9a9a9a, background color: #f9f9f8, font size: 12.8pt (17px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

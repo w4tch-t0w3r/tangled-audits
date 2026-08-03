@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "fd9e2d0e7674024ce7b2494594da6292",
+  "status": "done",
+  "requestedUrl": "https://prokevintex.ro",
+  "finalUrl": "https://prokevintex.ro/",
+  "pageTitle": "One moment, please...",
+  "htmlLang": "en",
+  "fetchedAt": "2026-08-03T15:39:18.671Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 6,
+    "incomplete": 0,
+    "inapplicable": 57
+  },
+  "violations": []
+}

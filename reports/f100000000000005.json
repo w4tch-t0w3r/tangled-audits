@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "status": "error",
+  "requestedUrl": "https://exemplu-demonstrativ.tangled-design.ro/pagina",
+  "finalUrl": "https://exemplu-demonstrativ.tangled-design.ro/pagina",
+  "pageTitle": "Pagină demonstrativă — raport exemplu (fixture)",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-03T12:00:00.000Z",
+  "fixture": true,
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "id": "f100000000000005",
+  "errorCode": "dns-failed"
+}

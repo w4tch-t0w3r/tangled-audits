@@ -89,19 +89,20 @@ function isPrivateAddress(addr) {
   );
 }
 
+const host = target.hostname;
+if (host === "localhost" || host.endsWith(".local") || host.endsWith(".internal")) {
+  writeReport(errorReport("private-address-blocked"));
+  process.exit(0);
+}
+let addrs;
 try {
-  const host = target.hostname;
-  if (host === "localhost" || host.endsWith(".local") || host.endsWith(".internal")) {
-    throw new Error("private host");
-  }
-  const addrs = isIP(host)
-    ? [{ address: host }]
-    : await lookup(host, { all: true });
-  if (addrs.some((a) => isPrivateAddress(a.address))) {
-    throw new Error("private address");
-  }
+  addrs = isIP(host) ? [{ address: host }] : await lookup(host, { all: true });
 } catch {
-  writeReport(errorReport("unreachable-host"));
+  writeReport(errorReport("dns-failed"));
+  process.exit(0);
+}
+if (addrs.some((a) => isPrivateAddress(a.address))) {
+  writeReport(errorReport("private-address-blocked"));
   process.exit(0);
 }
 
@@ -128,11 +129,13 @@ try {
     `${ua} TangledAuditBot/1.0 (+https://tangled-design.ro/audit)`
   );
 
+  let responseStatus = null;
   try {
-    await page.goto(target.href, {
+    const resp = await page.goto(target.href, {
       waitUntil: "networkidle2",
       timeout: 45_000,
     });
+    responseStatus = resp?.status() ?? null;
   } catch {
     // Slow sites: settle for DOM-ready before giving up entirely.
     try {
@@ -141,7 +144,7 @@ try {
         timeout: 30_000,
       });
     } catch {
-      writeReport(errorReport("unreachable"));
+      writeReport(errorReport("navigation-timeout"));
       process.exit(0);
     }
   }
@@ -165,6 +168,46 @@ try {
 
   const finalUrl = page.url();
   const pageTitle = (await page.title().catch(() => "")) || "";
+
+  // Anti-bot / interstitial detection — a challenge page would otherwise
+  // produce a falsely reassuring "0 violations" report about a page the
+  // user never asked us to test (caught by external QA on a Cloudflare
+  // "One moment, please..." interstitial).
+  const challengeTitle =
+    /one moment|just a moment|attention required|access denied|checking your browser|verific|ddos|captcha/i.test(
+      pageTitle
+    );
+  const challengeDom = await page
+    .evaluate(() => {
+      const sel = [
+        "#challenge-running",
+        "#challenge-form",
+        "#cf-challenge-running",
+        'script[src*="challenge-platform"]',
+        'form[action*="__cf_chl"]',
+        "#captcha",
+        ".g-recaptcha",
+        "#px-captcha",
+      ];
+      return sel.some((q) => document.querySelector(q) !== null);
+    })
+    .catch(() => false);
+  if (
+    challengeTitle ||
+    challengeDom ||
+    responseStatus === 403 ||
+    responseStatus === 503 ||
+    responseStatus === 429
+  ) {
+    writeReport(
+      errorReport("blocked-or-interstitial", {
+        finalUrl,
+        pageTitle: pageTitle.slice(0, 300),
+        httpStatus: responseStatus,
+      })
+    );
+    process.exit(0);
+  }
   const htmlLang = await page
     .$eval("html", (el) => el.getAttribute("lang"))
     .catch(() => null);
@@ -188,8 +231,21 @@ try {
     })),
   }));
 
+  const incompleteChecks = results.incomplete.map((v) => ({
+    id: v.id,
+    impact: v.impact ?? "minor",
+    help: v.help,
+    helpUrl: v.helpUrl,
+    wcagTags: v.tags.filter((t) => /^wcag\d/.test(t)),
+    nodes: v.nodes.length,
+    samples: v.nodes.slice(0, 10).map((n) => ({
+      target: (Array.isArray(n.target) ? n.target.join(" ") : String(n.target)).slice(0, 140),
+      note: (n.failureSummary ?? "").slice(0, 300),
+    })),
+  }));
+
   writeReport({
-    version: 1,
+    version: 2,
     id,
     status: "done",
     requestedUrl: rawUrl,
@@ -210,6 +266,7 @@ try {
       inapplicable: results.inapplicable.length,
     },
     violations,
+    incompleteChecks,
   });
 } catch (err) {
   console.error("audit crash:", err);

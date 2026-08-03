@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "status": "done",
+  "requestedUrl": "https://exemplu-demonstrativ.tangled-design.ro/pagina",
+  "finalUrl": "https://exemplu-demonstrativ.tangled-design.ro/pagina",
+  "pageTitle": "Pagină demonstrativă — raport exemplu (fixture)",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-03T12:00:00.000Z",
+  "fixture": true,
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "id": "f100000000000002",
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 39,
+    "incomplete": 2,
+    "inapplicable": 32
+  },
+  "violations": [],
+  "incompleteChecks": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 2,
+      "samples": [
+        {
+          "target": ".banner-overlay-text",
+          "note": "Element's background color could not be determined due to a background image"
+        },
+        {
+          "target": ".chart-label",
+          "note": "Element's background color could not be determined because element contains an image node"
+        }
+      ]
+    }
+  ]
+}

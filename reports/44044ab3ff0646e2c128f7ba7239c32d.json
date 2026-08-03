@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "id": "44044ab3ff0646e2c128f7ba7239c32d",
+  "status": "error",
+  "errorCode": "unreachable-host",
+  "requestedUrl": "https://domeniu-care-nu-exista-deloc-12345.ro",
+  "fetchedAt": "2026-08-03T15:39:08.932Z"
+}

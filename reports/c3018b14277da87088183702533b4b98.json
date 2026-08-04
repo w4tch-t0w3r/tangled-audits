@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "id": "c3018b14277da87088183702533b4b98",
+  "status": "done",
+  "requestedUrl": "https://tangled-design.ro/ro/work/ritorni",
+  "finalUrl": "https://tangled-design.ro/ro/work/ritorni",
+  "pageTitle": "RITORNI — sistemul de operare al unui salon, în trei piețe — Tangled Design",
+  "htmlLang": "ro",
+  "fetchedAt": "2026-08-04T06:22:40.858Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 28,
+    "incomplete": 2,
+    "inapplicable": 35
+  },
+  "violations": [],
+  "incompleteChecks": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2a",
+        "wcag412"
+      ],
+      "nodes": 1,
+      "samples": [
+        {
+          "target": ".hidden > .gap-1.tracking-\\[0\\.14em\\][aria-label=\"Limbă\"]",
+          "note": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "wcagTags": [
+        "wcag2aa",
+        "wcag143"
+      ],
+      "nodes": 10,
+      "samples": [
+        {
+          "target": ".my-8.md\\:my-14:nth-child(11) > figcaption",
+          "note": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "target": ".my-8.md\\:my-14:nth-child(27) > figcaption",
+          "note": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "target": ".my-8.md\\:my-14:nth-child(39) > figcaption",
+          "note": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "target": ".mt-1 > span[aria-hidden=\"true\"]",
+          "note": "Fix any of the following:\n  Element content contains only non-text characters"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(1) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(2) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(3) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(4) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(5) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "target": ".text-brand-orange.footer-headline__letter-outer[data-scatter=\"true\"]:nth-child(6) > .footer-headline__letter-inner.inline-block",
+          "note": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        }
+      ]
+    }
+  ]
+}

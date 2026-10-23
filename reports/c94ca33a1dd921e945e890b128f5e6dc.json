@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "id": "c94ca33a1dd921e945e890b128f5e6dc",
+  "status": "done",
+  "requestedUrl": "https://dagmor.app/",
+  "finalUrl": "https://dagmor.app/",
+  "pageTitle": "Dagmor | Call Recording Review and Campaign Reports",
+  "htmlLang": "en",
+  "fetchedAt": "2026-10-23T14:33:37.982Z",
+  "engine": {
+    "axeCore": "4.12.1",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "viewport": "1440x900"
+  },
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "passes": 17,
+    "incomplete": 0,
+    "inapplicable": 46
+  },
+  "violations": [],
+  "incompleteChecks": []
+}
